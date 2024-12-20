@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Pattaya&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div id="wrapper">
+        <Header>
+            <nav>
+                <div class="logo">
+                    <p>Time's Up <i class="fa-solid fa-stopwatch-20"></i></p>
+                </div>
+                <div class="nav-options">
+                    <button class="home">Home</button>
+                    <button class="about">About</button>
+                </div>
+            </nav>
+        </Header>
+        <main>
+            <div id="container">
+                <div class="content">
+                    <h1 class="banner">Configure Your CountDown</h1>
+                    <div class="title">
+                        <input type="text" placeholder="Enter the title" id="titleInput">
+                    </div>
+                    <div class="input-time-date">
+                        <div id="date">
+                            <label for="Date">Choose Date</label>
+                            <input type="Date" class="dateInput">
+                        </div>
+                        <div id="time">
+                            <label for="Time">Choose Time</label>
+                            <input type="Time" class="timeInput">
+                        </div>
+                    </div>
+                    <button class="btn-grad">Start Countdown</button>
+                    <h4 class="error">Fill all the field properly</h4>
+                </div>
+                <button class="btn-reset">Reset</button>
+                <!-- countdown section start here -->
+                <div class="countdown-section">
+                    <h1 class="heading"></h1>
+                    <div class="card-section">
+                        <div class="card">
+                            <div class="boxes day">00</div>
+                            <label class="lab" for="day">Days</label>
+                        </div>
+                        <div class="card">
+                            <div class="boxes hr">00</div>
+                            <label class="lab" for="hr">Hours</label>
+                        </div>
+                        <div class="card">
+                            <div class="boxes min">00</div>
+                            <label class="lab" for="min">Minutes</label>
+                        </div>
+                        <div class="card sec-card">
+                            <div class="boxes sec">00</div>
+                            <label class="lab" for="sec">seconds</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="finished">
+                    <h1 class=" countdown-finished">YOUR COUNTDOWN HAS FINISHED!!!</h1>
+                </div>
+            </div>
+            <div class="about-section">
+                <h2>About Countdown App</h2>
+                <p>Welcome to the Countdown App! This app helps you track time remaining for important events,
+                    deadlines, or
+                    any
+                    special occasion. Simply set the date and time for your event, and the app will show you a real-time
+                    countdown.
+                </p>
+                <p>Whether you're counting down to a birthday, a vacation, or an important project deadline, this app
+                    will
+                    keep you
+                    on track. Stay organized and never miss an important moment!</p>
+                <p>Made with love by <strong>Arshit Kumar</strong> 😊</p>
+            </div>
+        </main>
+
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Arshit Kumar. All Rights Reserved. | Designed with ❤️</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
